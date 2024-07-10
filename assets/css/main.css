@@ -2141,6 +2141,7 @@ section,
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-top: 3px solid var(--accent-color);
   border-bottom: 3px solid var(--accent-color);
+  border-radius: 50px;
   padding: 30px;
   height: 100%;
 }
@@ -2180,6 +2181,7 @@ section,
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  color:#444444
 }
 
 .contact .info-item:hover i {
@@ -2193,6 +2195,7 @@ section,
   padding: 30px;
   border-top: 3px solid var(--accent-color);
   border-bottom: 3px solid var(--accent-color);
+  border-radius: 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -2237,6 +2240,22 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.contact {
+  background-image: url("../../assets/img/Contacto.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: center bottom;
+}
+
+.contact h2 {
+  font-weight: 500;
+  color: #fff
+}
+
+.contact p {
+  color: #E8E1DD;
 }
 
 /*--------------------------------------------------------------
