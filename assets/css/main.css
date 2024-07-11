@@ -1551,7 +1551,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
-  padding: 00px 0px 50px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .services .service-item h4 a {
@@ -1611,6 +1611,7 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  padding: 10px 0px 10px 0px;
 }
 
 .cronograma .service-item h4 a {
