@@ -1186,6 +1186,7 @@ section,
   margin-bottom: 20px;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .why-us .faq-container .faq-item:last-child {
@@ -1193,7 +1194,8 @@ section,
 }
 
 .why-us .faq-container .faq-item h3 {
-  font-weight: 500;
+  font: var(--default-font);
+  font-weight: 600;
   font-size: 17px;
   line-height: 24px;
   margin: 0 30px 0 0;
@@ -1202,9 +1204,9 @@ section,
 }
 
 .why-us .faq-container .faq-item h3 span {
-  color: var(--accent-color);
+  color: var(--heading-color);
   padding-right: 5px;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 .why-us .faq-container .faq-item h3:hover {
@@ -1220,7 +1222,9 @@ section,
 }
 
 .why-us .faq-container .faq-item .faq-content p {
+  color: #444444;
   margin-bottom: 0;
+  margin-left: 20px;
   overflow: hidden;
 }
 
@@ -1274,6 +1278,10 @@ section,
   max-height: 70%;
 }
 
+/* .why-us .bordes {
+  border-radius: 20px;
+} */
+
 .why-us {
   background-image: url("../../assets/img/Certificado.jpg");
   background-size: cover;
@@ -1282,8 +1290,97 @@ section,
 }
 
 /*--------------------------------------------------------------
+# QUIENES SOMOS?
+--------------------------------------------------------------*/
+
+.quienes-somos .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 120px 0px 0px 20px;
+}
+
+.quienes-somos .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  padding: 0px 0px 0px 20px;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.quienes-somos .content p:last-child {
+  margin-bottom: 0;
+}
+
+.quienes-somos .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quienes-somos .content ul li {
+  padding-bottom: 10px;
+}
+
+.quienes-somos .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.quienes-somos .progress .skill {
+  color: var(--default-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.quienes-somos .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.quienes-somos .progress-bar-wrap {
+  background: color-mix(in srgb, var(--heading-color), transparent 90%);
+  height: 10px;
+}
+
+.quienes-somos .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+.quienes-somos .bordes {
+  border-radius: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .quienes-somos .content h3 {
+   font-size: 2rem;
+   font-weight: 700;
+   font-style: normal;
+   line-height: normal;
+   padding: 0px 0px 20px 0px;
+}
+}
+  
+@media (max-width: 992px) {
+.quienes-somos .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  padding: 0px 0px 0px 0px;
+  font-weight: 400;
+}
+}
+
+
+/*--------------------------------------------------------------
 # GENERANDO UN CAMBIO
 --------------------------------------------------------------*/
+
 .skills .content h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -1346,6 +1443,89 @@ section,
   }
 
 /*--------------------------------------------------------------
+# 10 AÑOS DE TRAYECTORIA
+--------------------------------------------------------------*/
+.trayectoria .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 110px 0px 0px 20px;
+}
+
+.trayectoria .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  padding: 0px 0px 0px 20px;
+}
+
+.trayectoria .content p:last-child {
+  margin-bottom: 0;
+}
+
+.trayectoria .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trayectoria .content ul li {
+  padding-bottom: 10px;
+}
+
+.trayectoria .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.trayectoria .progress .skill {
+  color: var(--default-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.trayectoria .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.trayectoria .progress-bar-wrap {
+  background: color-mix(in srgb, var(--heading-color), transparent 90%);
+  height: 10px;
+}
+
+.trayectoria .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+.trayectoria .bordes {
+  border-radius: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .trayectoria .content h3 {
+   font-size: 2rem;
+   font-weight: 700;
+   font-style: normal;
+   line-height: normal;
+   padding: 0px 0px 20px 0px;
+}
+}
+  
+@media (max-width: 992px) {
+.trayectoria .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  padding: 0px 0px 0px 0px;
+  font-weight: 400;
+}
+}
+/*--------------------------------------------------------------
 # QUÉ HACEMOS?
 --------------------------------------------------------------*/
 
@@ -1371,11 +1551,13 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  padding: 00px 0px 50px 0px;
 }
 
 .services .service-item h4 a {
   color: var(--heading-color);
   transition: ease-in-out 0.3s;
+  padding: 00px 0px 50px 0px;
 }
 
 .services .service-item p {
@@ -1496,10 +1678,11 @@ section,
 
 .call-to-action h3 {
   color: var(--default-color);
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  left: 250px
+  left: 150px
 }
 
 .call-to-action p {
@@ -2039,7 +2222,7 @@ section,
 .testimonials {
   background-image: url("../../assets/img/Opiniones.jpg");
     background-size: cover;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-position: center bottom;
 }
 
@@ -2197,6 +2380,12 @@ section,
   border-bottom: 3px solid var(--accent-color);
   border-radius: 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 575px) {
